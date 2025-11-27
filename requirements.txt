@@ -1,0 +1,3 @@
+chronos-forecasting>=2.0
+pandas[pyarrow]
+hf_transfer
