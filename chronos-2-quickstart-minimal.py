@@ -33,6 +33,7 @@ print("Input dataframe shape:", context_df.shape)
 print("Preview of input dataframe:")
 print(context_df.head().to_string(index=False))
 
+raise RuntimeError("Look! A BUG!!" )
 # COMMAND ----------
 
 pred_df = pipeline.predict_df(context_df, prediction_length=24, quantile_levels=[0.1, 0.5, 0.9])
